@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BBBFA0072C4042E4001C4A74 /* FormValidationWithViewModelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA0062C4042E4001C4A74 /* FormValidationWithViewModelApp.swift */; };
-		BBBFA0092C4042E4001C4A74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA0082C4042E4001C4A74 /* ContentView.swift */; };
+		BBBFA0092C4042E4001C4A74 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA0082C4042E4001C4A74 /* LoginView.swift */; };
 		BBBFA00B2C4042E4001C4A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBFA00A2C4042E4001C4A74 /* Assets.xcassets */; };
 		BBBFA00E2C4042E4001C4A74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBFA00D2C4042E4001C4A74 /* Preview Assets.xcassets */; };
 		BBBFA0182C4042E5001C4A74 /* FormValidationWithViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA0172C4042E5001C4A74 /* FormValidationWithViewModelTests.swift */; };
 		BBBFA0222C4042E5001C4A74 /* FormValidationWithViewModelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA0212C4042E5001C4A74 /* FormValidationWithViewModelUITests.swift */; };
 		BBBFA0242C4042E5001C4A74 /* FormValidationWithViewModelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA0232C4042E5001C4A74 /* FormValidationWithViewModelUITestsLaunchTests.swift */; };
+		BBBFA0322C404622001C4A74 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA0312C404622001C4A74 /* LoginError.swift */; };
+		BBBFA0352C4046DF001C4A74 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA0342C4046DF001C4A74 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		BBBFA0032C4042E4001C4A74 /* FormValidationWithViewModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormValidationWithViewModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBFA0062C4042E4001C4A74 /* FormValidationWithViewModelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationWithViewModelApp.swift; sourceTree = "<group>"; };
-		BBBFA0082C4042E4001C4A74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BBBFA0082C4042E4001C4A74 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BBBFA00A2C4042E4001C4A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBBFA00D2C4042E4001C4A74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBBFA0132C4042E5001C4A74 /* FormValidationWithViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormValidationWithViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		BBBFA01D2C4042E5001C4A74 /* FormValidationWithViewModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormValidationWithViewModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBFA0212C4042E5001C4A74 /* FormValidationWithViewModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationWithViewModelUITests.swift; sourceTree = "<group>"; };
 		BBBFA0232C4042E5001C4A74 /* FormValidationWithViewModelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationWithViewModelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BBBFA0312C404622001C4A74 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		BBBFA0342C4046DF001C4A74 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		BBBFA0052C4042E4001C4A74 /* FormValidationWithViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BBBFA0332C4046D0001C4A74 /* Extensions */,
+				BBBFA0302C404613001C4A74 /* Custom Errors */,
 				BBBFA0062C4042E4001C4A74 /* FormValidationWithViewModelApp.swift */,
-				BBBFA0082C4042E4001C4A74 /* ContentView.swift */,
+				BBBFA0082C4042E4001C4A74 /* LoginView.swift */,
 				BBBFA00A2C4042E4001C4A74 /* Assets.xcassets */,
 				BBBFA00C2C4042E4001C4A74 /* Preview Content */,
 			);
@@ -125,6 +131,22 @@
 				BBBFA0232C4042E5001C4A74 /* FormValidationWithViewModelUITestsLaunchTests.swift */,
 			);
 			path = FormValidationWithViewModelUITests;
+			sourceTree = "<group>";
+		};
+		BBBFA0302C404613001C4A74 /* Custom Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BBBFA0312C404622001C4A74 /* LoginError.swift */,
+			);
+			path = "Custom Errors";
+			sourceTree = "<group>";
+		};
+		BBBFA0332C4046D0001C4A74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BBBFA0342C4046DF001C4A74 /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBFA0092C4042E4001C4A74 /* ContentView.swift in Sources */,
+				BBBFA0352C4046DF001C4A74 /* String+Extensions.swift in Sources */,
+				BBBFA0092C4042E4001C4A74 /* LoginView.swift in Sources */,
 				BBBFA0072C4042E4001C4A74 /* FormValidationWithViewModelApp.swift in Sources */,
+				BBBFA0322C404622001C4A74 /* LoginError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
